@@ -23,8 +23,8 @@
     "@cloudflare/vitest-pool-workers": "0.21.3",
     "@shopify/cli": "4.6.1",
     "@types/node": "24.13.3",
-    "typescript": "5.9.2",
+    "typescript": "5.9.3",
     "vitest": "4.1.10",
-    "wrangler": "4.122.0"
+    "wrangler": "4.123.0"
   }
 }
