@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+.env*
+!.dev.vars.example
+*.log
+*.zip
+.DS_Store
+shopify.app.*.toml
+!shopify.app.toml
+

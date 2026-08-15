@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "govp-for-shopify",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-01",
+  "vars": {
+    "APP_URL": "https://commerce.govp.gemacode.org",
+    "EXCHANGE_API_URL": "https://partners.gemacode.org/api/exchange"
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "govp-for-shopify",
+    "database_id": "replace-with-d1-database-id",
+    "migrations_dir": "migrations"
+  }],
+  "triggers": { "crons": ["*/5 * * * *"] }
+}

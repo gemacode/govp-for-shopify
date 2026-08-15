@@ -1,0 +1,26 @@
+name = "GOVP for Shopify"
+client_id = "00000000000000000000000000000000"
+application_url = "https://commerce.govp.gemacode.org/app"
+embedded = false
+
+[access_scopes]
+scopes = "read_orders"
+
+[auth]
+redirect_urls = ["https://commerce.govp.gemacode.org/auth/callback"]
+
+[webhooks]
+api_version = "2026-07"
+
+[[webhooks.subscriptions]]
+topics = ["orders/fulfilled"]
+uri = "/webhooks/orders-fulfilled"
+include_fields = ["id", "name", "created_at", "line_items"]
+
+[[webhooks.subscriptions]]
+topics = ["app/uninstalled"]
+uri = "/webhooks/app-uninstalled"
+
+[[webhooks.subscriptions]]
+compliance_topics = ["customers/data_request", "customers/redact", "shop/redact"]
+uri = "/webhooks/compliance"
