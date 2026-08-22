@@ -19,7 +19,7 @@
     "hono": "4.13.1"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^5.20260808.1",
+    "@cloudflare/workers-types": "^5.20260819.1",
     "@cloudflare/vitest-pool-workers": "0.21.3",
     "@shopify/cli": "4.6.1",
     "@types/node": "24.13.3",
